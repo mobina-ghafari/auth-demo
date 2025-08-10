@@ -1,0 +1,44 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  label {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: white;
+  }
+
+  input {
+    border: 2px solid #3a82f7;
+    outline: none;
+    border-radius: 10px;
+    padding: 0.5rem 0.75rem;
+    background-color: transparent;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    width: 100%;
+    max-width: 20rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .errorInput {
+    border: 1px solid #dc2626 !important;
+  }
+
+  .error {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+
+  @media (max-width: 480px) {
+    input {
+      max-width: 100%;
+      font-size: 0.9rem;
+    }
+  }
+}
